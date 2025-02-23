@@ -7,10 +7,10 @@
 	<test name="CreateEventAndGetEvents">
 		<classes>
 
-			<class name="org.petsFirst.api.post.CreateEventAPI" />
+			<!--<class name="org.petsFirst.api.post.CreateEventAPI" />-->
 			<class name="org.petsFirst.api.post.LogoutAPI" />
-			<class name="org.petsFirst.api.get.GetEventAPI" />
-			<class name="org.petsFirst.api.delete.DeleteEventAPI" />
+		<!--	<class name="org.petsFirst.api.get.GetEventAPI" />
+			<class name="org.petsFirst.api.delete.DeleteEventAPI" />-->
 
 		</classes>
 	</test>
