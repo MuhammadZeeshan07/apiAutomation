@@ -19,7 +19,7 @@ public class CreateEventAPI extends UrlConfiguration {
 			String accessToken = Authentication.getAccessToken();
 
 			String eventRequestBody = "{\n" + "  \"name\": \"Event Name\",\n" + "  \"imageUrl\": \"Event Image\",\n"
-					+ "  \"eventDate\": \"2025-01-29\",\n" + "  \"isDateFlexible\": true,\n"
+					+ "  \"eventDate\": \"2025-03-29\",\n" + "  \"isDateFlexible\": true,\n"
 					+ "  \"guestsCount\": 50,\n" + "  \"minBudget\": 0,\n" + "  \"maxBudget\": 0,\n"
 					+ "  \"budget\": 5000,\n" + "  \"isBudgetFlexible\": true,\n"
 					+ "  \"serviceCategory\": { \"value\": \"Wedding\" },\n"
@@ -48,7 +48,7 @@ public class CreateEventAPI extends UrlConfiguration {
 			String accessToken = Authentication.getAccessToken();
 
 			String eventRequestBody = "{\n" + "  \"name\": \"Event Name\",\n" + "  \"imageUrl\": \"Event Image\",\n"
-					+ "  \"eventDate\": \"2025-01-28\",\n" + "  \"isDateFlexible\": true,\n"
+					+ "  \"eventDate\": \"2025-03-28\",\n" + "  \"isDateFlexible\": true,\n"
 					+ "  \"guestsCount\": 50,\n" + "  \"minBudget\": 0,\n" + "  \"maxBudget\": 0,\n"
 					+ "  \"budget\": 5000,\n" + "  \"isBudgetFlexible\": true,\n"
 					+ "  \"serviceCategory\": { \"value\": \"Wedding\" },\n"
@@ -117,7 +117,7 @@ public class CreateEventAPI extends UrlConfiguration {
 			String accessToken = Authentication.getAccessToken();
 
 			String eventRequestBody = "{\n" + "  \"name\": \"Event Name\",\n" + "  \"imageUrl\": \"Event Image\",\n"
-					+ "  \"eventDate\": \"2025-02-26\",\n" + "  \"isDateFlexible\": true,\n"
+					+ "  \"eventDate\": \"2025-03-26\",\n" + "  \"isDateFlexible\": true,\n"
 					+ "  \"guestsCount\": 50,\n" + "  \"minBudget\": 0,\n" + "  \"maxBudget\": 0,\n"
 					+ "  \"budget\": 5000,\n" + "  \"isBudgetFlexible\": true,\n"
 					+ "  \"serviceCategory\": { \"value\": \"Anniversary\" },\n"

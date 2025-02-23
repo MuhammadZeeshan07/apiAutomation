@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 3 failed tests</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -40,7 +40,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-SanitySuite" class="navigator-link">
-              <span class="suite-name border-failed">SanitySuite</span>
+              <span class="suite-name border-passed">SanitySuite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -93,31 +93,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">7 methods, 3 failed,   4 passed</span>
-                  </li>
-                  <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-SanitySuite" class="hide-methods failed suite-SanitySuite"> (hide)</a> <!-- hide-methods failed suite-SanitySuite -->
-                      <a href="#" panel-name="suite-SanitySuite" class="show-methods failed suite-SanitySuite"> (show)</a> <!-- show-methods failed suite-SanitySuite -->
-                    </span>
-                    <div class="method-list-content failed suite-SanitySuite">
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-SanitySuite" title="org.petsFirst.api.post.CreateEventAPI" class="method navigator-link" hash-for-method="createEventWithPreviousDate">createEventWithPreviousDate</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-SanitySuite" title="org.petsFirst.api.post.CreateEventAPI" class="method navigator-link" hash-for-method="createEventWithRequiredFields">createEventWithRequiredFields</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-SanitySuite" title="org.petsFirst.api.post.CreateEventAPI" class="method navigator-link" hash-for-method="createEventWithSkippableFields">createEventWithSkippableFields</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content failed suite-SanitySuite -->
+                    <span class="method-stats">1 method,   1 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -126,21 +102,6 @@
                       <a href="#" panel-name="suite-SanitySuite" class="show-methods passed suite-SanitySuite"> (show)</a> <!-- show-methods passed suite-SanitySuite -->
                     </span>
                     <div class="method-list-content passed suite-SanitySuite">
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-SanitySuite" title="org.petsFirst.api.post.CreateEventAPI" class="method navigator-link" hash-for-method="createEventWithFutureDate">createEventWithFutureDate</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-SanitySuite" title="org.petsFirst.api.delete.DeleteEventAPI" class="method navigator-link" hash-for-method="deleteEvent">deleteEvent</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-SanitySuite" title="org.petsFirst.api.get.GetEventAPI" class="method navigator-link" hash-for-method="getEvent">getEvent</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-SanitySuite" title="org.petsFirst.api.post.LogoutAPI" class="method navigator-link" hash-for-method="testLogout">testLogout</a> <!-- method navigator-link -->
@@ -158,107 +119,6 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-SanitySuite" class="panel SanitySuite">
-          <div class="suite-SanitySuite-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">org.petsFirst.api.post.CreateEventAPI</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="createEventWithPreviousDate">
-                  </a> <!-- createEventWithPreviousDate -->
-                  <span class="method-name">createEventWithPreviousDate</span>
-                  <div class="stack-trace">java.lang.AssertionError: Unexpected status code received. expected [201] but found [400]
-	at org.petsFirst.api.post.CreateEventAPI.createEventWithPreviousDate(CreateEventAPI.java:103)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 32 stack frames
-</div> <!-- stack-trace -->
-                  <em>
-(CreateEvent: Verify event creation with previous date)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="createEventWithRequiredFields">
-                  </a> <!-- createEventWithRequiredFields -->
-                  <span class="method-name">createEventWithRequiredFields</span>
-                  <div class="stack-trace">java.lang.AssertionError: 1 expectation failed.
-Expected status code &lt;201&gt; but was &lt;400&gt;.
-
-	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
-	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:57)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:263)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
-	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
-	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
-	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:696)
-	at io.restassured.internal.ResponseSpecificationImpl.this$2$validateResponseIfRequired(ResponseSpecificationImpl.groovy)
-	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
-	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:198)
-	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:62)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
-	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:135)
-	at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
-	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:143)
-	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
-	at org.petsFirst.api.post.CreateEventAPI.createEventWithRequiredFields(CreateEventAPI.java:40)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 37 stack frames
-</div> <!-- stack-trace -->
-                  <em>
-(CreateEvent: Verify event creation with all required fields)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="createEventWithSkippableFields">
-                  </a> <!-- createEventWithSkippableFields -->
-                  <span class="method-name">createEventWithSkippableFields</span>
-                  <div class="stack-trace">java.lang.AssertionError: 1 expectation failed.
-Expected status code &lt;201&gt; but was &lt;400&gt;.
-
-	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
-	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
-	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
-	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:696)
-	at io.restassured.internal.ResponseSpecificationImpl.this$2$validateResponseIfRequired(ResponseSpecificationImpl.groovy)
-	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
-	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:198)
-	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:62)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
-	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:135)
-	at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
-	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:143)
-	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
-	at org.petsFirst.api.post.CreateEventAPI.createEventWithSkippableFields(CreateEventAPI.java:70)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 37 stack frames
-</div> <!-- stack-trace -->
-                  <em>
-(CreateEvent: Verify event creation with skippable fields)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-SanitySuite-class-failed -->
-          <div class="suite-SanitySuite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">org.petsFirst.api.post.CreateEventAPI</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="createEventWithFutureDate">
-                  </a> <!-- createEventWithFutureDate -->
-                  <span class="method-name">createEventWithFutureDate</span>
-                  <em>
-(CreateEvent: Verify event creation with future date)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-SanitySuite-class-passed -->
           <div class="suite-SanitySuite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -272,40 +132,6 @@ Expected status code &lt;201&gt; but was &lt;400&gt;.
                   <span class="method-name">testLogout</span>
                   <em>
 (Logout: Verify logout funtionality)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-SanitySuite-class-passed -->
-          <div class="suite-SanitySuite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">org.petsFirst.api.get.GetEventAPI</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="getEvent">
-                  </a> <!-- getEvent -->
-                  <span class="method-name">getEvent</span>
-                  <em>
-(GetEvent: Verify event retrieval funtionality)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-SanitySuite-class-passed -->
-          <div class="suite-SanitySuite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">org.petsFirst.api.delete.DeleteEventAPI</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="deleteEvent">
-                  </a> <!-- deleteEvent -->
-                  <span class="method-name">deleteEvent</span>
-                  <em>
-(DeleteEvent: Verify event deletion funtionality)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -325,10 +151,7 @@ Expected status code &lt;201&gt; but was &lt;400&gt;.
   &lt;/listeners&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;CreateEventAndGetEvents&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;org.petsFirst.api.post.CreateEventAPI&quot;/&gt;
       &lt;class name=&quot;org.petsFirst.api.post.LogoutAPI&quot;/&gt;
-      &lt;class name=&quot;org.petsFirst.api.get.GetEventAPI&quot;/&gt;
-      &lt;class name=&quot;org.petsFirst.api.delete.DeleteEventAPI&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- CreateEventAndGetEvents --&gt;
 &lt;/suite&gt; &lt;!-- SanitySuite --&gt;
@@ -342,7 +165,7 @@ Expected status code &lt;201&gt; but was &lt;400&gt;.
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">CreateEventAndGetEvents (4 classes)</span>
+                <span class="test-name">CreateEventAndGetEvents (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -368,40 +191,16 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(7);
+data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'createEventWithRequiredFields')
-data.setCell(0, 2, 'org.petsFirst.api.post.CreateEventAPI')
-data.setCell(0, 3, 4396);
-data.setCell(1, 0, 1)
-data.setCell(1, 1, 'getEvent')
-data.setCell(1, 2, 'org.petsFirst.api.get.GetEventAPI')
-data.setCell(1, 3, 3280);
-data.setCell(2, 0, 2)
-data.setCell(2, 1, 'deleteEvent')
-data.setCell(2, 2, 'org.petsFirst.api.delete.DeleteEventAPI')
-data.setCell(2, 3, 2064);
-data.setCell(3, 0, 3)
-data.setCell(3, 1, 'createEventWithFutureDate')
-data.setCell(3, 2, 'org.petsFirst.api.post.CreateEventAPI')
-data.setCell(3, 3, 1964);
-data.setCell(4, 0, 4)
-data.setCell(4, 1, 'createEventWithSkippableFields')
-data.setCell(4, 2, 'org.petsFirst.api.post.CreateEventAPI')
-data.setCell(4, 3, 368);
-data.setCell(5, 0, 5)
-data.setCell(5, 1, 'createEventWithPreviousDate')
-data.setCell(5, 2, 'org.petsFirst.api.post.CreateEventAPI')
-data.setCell(5, 3, 366);
-data.setCell(6, 0, 6)
-data.setCell(6, 1, 'testLogout')
-data.setCell(6, 2, 'org.petsFirst.api.post.LogoutAPI')
-data.setCell(6, 3, 364);
+data.setCell(0, 1, 'testLogout')
+data.setCell(0, 2, 'org.petsFirst.api.post.LogoutAPI')
+data.setCell(0, 3, 4988);
 window.suiteTableData['SanitySuite']= { tableData: data, tableDiv: 'times-div-SanitySuite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 12 seconds</span>
+              <span class="suite-total-time">Total running time: 4 seconds</span>
               <div id="times-div-SanitySuite">
               </div> <!-- times-div-SanitySuite -->
             </div> <!-- times-div -->
@@ -427,49 +226,10 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">org.petsFirst.api.post.CreateEventAPI</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">createEventWithRequiredFields</span>
-                <span class="method-start">0 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">createEventWithSkippableFields</span>
-                <span class="method-start">4455 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">createEventWithPreviousDate</span>
-                <span class="method-start">4838 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">createEventWithFutureDate</span>
-                <span class="method-start">5207 ms</span>
-              </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
               <div class="chronological-class-name">org.petsFirst.api.post.LogoutAPI</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">testLogout</span>
-                <span class="method-start">7174 ms</span>
-              </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">org.petsFirst.api.get.GetEventAPI</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">getEvent</span>
-                <span class="method-start">7549 ms</span>
-              </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">org.petsFirst.api.delete.DeleteEventAPI</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">deleteEvent</span>
-                <span class="method-start">10833 ms</span>
+                <span class="method-start">0 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
