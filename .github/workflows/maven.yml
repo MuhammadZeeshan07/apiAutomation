@@ -1,7 +1,9 @@
 name: Run API Tests
 
 on:
-  workflow_dispatch:  # This enables manual triggering
+  workflow_dispatch:  # Allows manual trigger
+  repository_dispatch:  # Allows trigger from another repository
+    types: [run-tests]  # Custom event name
 
 jobs:
   build:
@@ -18,5 +20,5 @@ jobs:
         distribution: 'temurin'
         cache: maven
 
-    - name: Build and Run API Tests
+    - name: Build with Maven
       run: mvn test -PSanity
