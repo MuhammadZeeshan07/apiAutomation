@@ -1,20 +1,24 @@
-name: Dev Test Workflow
+name: Run API Tests
 
 on:
-  push:
-    branches: [ "master" ]
-  pull_request:
-    branches: [ "master" ]
-  workflow_dispatch:
+  workflow_dispatch:  # Allows manual trigger
+  repository_dispatch:  # Allows trigger from another repository
+    types: [run-tests]  # Custom event name
 
 jobs:
-  trigger-test:
+  build:
     runs-on: windows-latest
+
     steps:
-      - name: Trigger automated tests in apiAutomation repo
-        uses: peter-evans/repository-dispatch@v2
-        with:
-          token: ${{ secrets.API_ACCESS_TOKEN }}  # ✅ Securely using the secret
-          repository: MuhammadZeeshan07/apiAutomation
-          event-type: run-tests
-          client-payload: '{"triggered_by": "Dev Repo"}'
+    - name: Checkout code
+      uses: actions/checkout@v4
+
+    - name: Set up JDK 17
+      uses: actions/setup-java@v3
+      with:
+        java-version: '17'
+        distribution: 'temurin'
+        cache: maven
+
+    - name: Build with Maven
+      run: mvn test -PSanity
